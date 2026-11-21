@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gajane</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            /* NR 1 PILT: Siniste lainetega taustapilt */
+            background-image: url('taust.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        .container {
+            /* Poolläbipaistev tume taust, et tekst oleks hästi loetav */
+            background: rgba(8, 15, 30, 0.82);
+            backdrop-filter: blur(8px);
+            max-width: 650px;
+            width: 100%;
+            padding: 40px 30px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 35px rgba(0, 140, 255, 0.25);
+            border: 1px solid rgba(100, 190, 255, 0.25);
+        }
+
+        .profile-pic {
+            width: 170px;
+            height: 170px;
+            border-radius: 50%;
+            object-fit: cover;
+            background-color: #ffffff;
+            border: 4px solid #4db8ff;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 20px rgba(77, 184, 255, 0.4);
+        }
+
+        .intro {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 25px;
+            line-height: 1.5;
+        }
+
+        .lyrics {
+            font-size: 1.05rem;
+            font-style: italic;
+            line-height: 1.7;
+            color: #e6f2ff;
+            margin-bottom: 30px;
+        }
+
+        .lyrics p {
+            margin-bottom: 18px;
+        }
+
+        .youtube-btn {
+            display: inline-block;
+            background-color: #ff0000;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            padding: 12px 26px;
+            border-radius: 30px;
+            transition: background-color 0.2s ease, transform 0.2s ease;
+            box-shadow: 0 4px 15px rgba(255, 0, 0, 0.35);
+        }
+
+        .youtube-btn:hover {
+            background-color: #cc0000;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- NR 2 PILT: Profiilipilt -->
+        <img src="profiil.png" alt="Gajane profiilipilt" class="profile-pic">
+
+        <p class="intro">
+            Tere! Mina olen Gajane. Kõige paremini iseloomustavad mind laulsõnad -
+        </p>
+
+        <div class="lyrics">
+            <p>
+                No one's getting out of this world alive<br>
+                We live, we die like it's Saturday night<br>
+                Stay awake, we sleep when we're dead<br>
+                We live, we die like it's Saturday night<br>
+                We live and we die like it's Saturday night
+            </p>
+
+            <p>
+                Don't ever let nobody tell you what you gotta do<br>
+                Hallelujah for the weekend<br>
+                And don't believe nobody when they say they speak the truth<br>
+                Hallelujah for the weekend
+            </p>
+
+            <p>
+                'Cause we are runaway kids, tryna follow our hearts<br>
+                Living our dream in a house of cards
+            </p>
+
+            <p>
+                No one's getting out of this world alive<br>
+                We live, we die like it's Saturday night<br>
+                Stay awake, we sleep when we're dead<br>
+                We live, we die like it's Saturday night<br>
+                We live and we die like it's Saturday night
+            </p>
+
+            <p>
+                A million times I've heard them say "You gotta give it up"<br>
+                Hallelujah for the weekend<br>
+                But all the damn haters better keep their mouths shut<br>
+                Hallelujah for the weekend
+            </p>
+
+            <p>
+                'Cause it's never too late and you're never too old<br>
+                Our hearts are on fire, never let 'em grow cold
+            </p>
+        </div>
+
+        <!-- YOUTUBE LINK -->
+        <a href="https://www.youtube.com/watch?v=llSQiz1I8IA&list=RDllSQiz1I8IA&start_radio=1" target="_blank" rel="noopener noreferrer" class="youtube-btn">
+            ▶ Kuula YouTube'is: Eclipse – Saturday Night (Hallelujah)
+        </a>
+    </div>
+
+</body>
+</html>
